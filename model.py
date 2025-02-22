@@ -6,7 +6,7 @@ import os
 
 # ✅ 1. Define Directories (Make Sure You Have Images Here)
 train_dir = "dataset/train"  # Images should be inside subfolders like "dataset/train/cat", "dataset/train/dog"
-test_dir = "dataset/test"  # Same structure as train_dir
+test_dir = "test"  # Same structure as train_dir
 
 # ✅ 2. Data Augmentation for Better Training
 train_datagen = ImageDataGenerator(
@@ -61,6 +61,6 @@ model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=
 model.fit(train_dataset, epochs=10, validation_data=test_dataset)
 
 # ✅ 7. Save the Model
-model.save("image_classifier.h5")
+model.save("models//Cats/Dogs/x1.h5")
 
 print("Training complete! Model saved as image_classifier.h5")
