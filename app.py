@@ -3,10 +3,10 @@ import numpy as np
 from tensorflow.keras.preprocessing import image
 
 # Load the trained model
-model = tf.keras.models.load_model("image_classifier.h5")
+model = tf.keras.models.load_model("models/Cats/Dogs/x1.h5")
 
 # Load the test image
-img_path = "test_image.jpg"  # Change to your test image path
+img_path = "test/cat/download.jpg"  # Change to your test image path
 img = image.load_img(img_path, target_size=(150, 150))
 
 # Convert image to array
