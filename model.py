@@ -61,6 +61,6 @@ model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=
 model.fit(train_dataset, epochs=10, validation_data=test_dataset)
 
 # ✅ 7. Save the Model
-model.save("models//Cats/Dogs/x1.h5")
+model.save("models//Cats/Dogs/x2.h5")
 
 print("Training complete! Model saved as image_classifier.h5")
